@@ -1,7 +1,6 @@
 import GLib from 'gi://GLib';
 import GObject from 'gi://GObject';
 import Gio from 'gi://Gio';
-import Gtk from 'gi://Gtk';
 import St from 'gi://St';
 import Clutter from 'gi://Clutter';
 import Soup from 'gi://Soup';
@@ -664,7 +663,7 @@ class NeuralwattUsageIndicator extends PanelMenu.Button {
             y_expand: true,
             style: 'max-height: 300px;',
         });
-        scrollView.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC);
+        scrollView.set_policy(St.PolicyType.NEVER, St.PolicyType.AUTOMATIC);
 
         const errorList = new St.BoxLayout({
             vertical: true,
