@@ -1,0 +1,12 @@
+{
+  "name": "Neuralwatt Usage",
+  "description": "Display Neuralwatt API usage in the top panel.",
+  "uuid": "neuralwatt-usage@nickgermaine.com",
+  "shell-version": ["46", "47", "48", "49", "50"],
+  "url": "https://github.com/nickgermaine/neuralwatt-usage",
+  "settings-schema": "org.gnome.shell.extensions.neuralwatt-usage",
+  "donations": {
+    "github": "nickgermaine"
+  },
+  "version": 1
+}

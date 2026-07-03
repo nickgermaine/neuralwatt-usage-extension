@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+UUID="neuralwatt-usage@nickgermaine.com"
+SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
+DEST_DIR="$HOME/.local/share/gnome-shell/extensions/$UUID"
+
+rm -rf "$DEST_DIR"
+mkdir -p "$DEST_DIR"
+
+rsync -a --exclude='.git' --exclude='.idea' --exclude='gschemas.compiled' "$SRC_DIR/" "$DEST_DIR"
+
+glib-compile-schemas "$DEST_DIR/schemas"
+
+if gnome-extensions info "$UUID" >/dev/null 2>&1; then
+    gnome-extensions disable "$UUID" 2>/dev/null || true
+    gnome-extensions enable "$UUID"
+    echo "Reloaded (UI only. Code changes need shell restart)"
+else
+    gnome-extensions enable "$UUID" 2>/dev/null || true
+    echo "Installed. Restart GNOME Shell to load:"
+    echo "  Wayland:  log out & back in"
+    echo "  X11:      Switch to wayland"
+fi

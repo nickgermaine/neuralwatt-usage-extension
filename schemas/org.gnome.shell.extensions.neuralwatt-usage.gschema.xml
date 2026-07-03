@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="neuralwatt-usage">
+  <schema id="org.gnome.shell.extensions.neuralwatt-usage" path="/org/gnome/shell/extensions/neuralwatt-usage/">
+    <key name="refresh-interval" type="i">
+      <default>300</default>
+      <summary>Refresh interval</summary>
+      <description>How often to refresh usage data in seconds</description>
+    </key>
+    <key name="display-mode" type="s">
+      <default>'text'</default>
+      <summary>Display mode</summary>
+      <description>How to display usage in the panel: 'text' for percentage text, 'bar' for a progress bar, or 'both' for both</description>
+    </key>
+    <key name="icon-style" type="s">
+      <default>'color'</default>
+      <summary>Icon style</summary>
+      <description>Icon style: 'color' for the original colored icon, 'monochrome' for a desaturated monochrome icon</description>
+    </key>
+    <key name="show-icon" type="b">
+      <default>true</default>
+      <summary>Show icon</summary>
+      <description>Whether to show the Neuralwatt icon in the top bar</description>
+    </key>
+    <key name="proxy-url" type="s">
+      <default>''</default>
+      <summary>Proxy URL</summary>
+      <description>HTTP proxy URL (e.g., http://localhost:11809). Leave empty to use no proxy.</description>
+    </key>
+    <key name="profiles" type="s">
+      <default>'[{"name":"Default","apiKey":"","showInPanel":true}]'</default>
+      <summary>Profiles</summary>
+      <description>JSON string containing an array of profiles with name, apiKey, and showInPanel</description>
+    </key>
+  </schema>
+</schemalist>
