@@ -3,8 +3,12 @@
 
 A Gnome shell extension that displays your Neuralwatt usage and account stats in the top panel.
 
-<img src="assets/screen.png" width="440"  alt="Screenshot of extension panel"/>  
-                                                                                                                                                            
+<img src="assets/screen.png" width="440"  alt="Screenshot of extension panel"/>
+
+## Important Note                                                                                                                                                                                                
+                                                                                                                                                                                                                   
+I am not affiliated with Neuralwatt in any way, I just really needed a way to see my usage, and I use Gnome.... so....
+
 ## Features                                                                                                                                                                                                      
                                                                                                                                                                                                                    
 - **Near-realtime** usage display
