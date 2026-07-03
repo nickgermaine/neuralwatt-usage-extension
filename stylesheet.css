@@ -1,0 +1,166 @@
+/* Panel button styles */
+.neuralwatt-icon {
+    margin-right: 6px;
+}
+
+.neuralwatt-usage-label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Panel progress bar */
+.neuralwatt-panel-progress-bg {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    height: 10px;
+    width: 50px;
+    margin-left: 4px;
+}
+
+.neuralwatt-panel-progress-bar {
+    height: 10px;
+    border-radius: 3px;
+    transition: width 300ms ease-out;
+    background-color: #ffffff;
+}
+
+/* Usage section styles */
+.neuralwatt-usage-section {
+    padding: 4px 0;
+    spacing: 6px;
+    min-width: 220px;
+}
+
+.neuralwatt-section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.neuralwatt-today-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e0e0e0;
+    margin-bottom: 14px;
+}
+
+.neuralwatt-percent-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Progress bar styles */
+.neuralwatt-progress-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    height: 8px;
+    width: 200px;
+    margin: 4px 0;
+}
+
+.neuralwatt-progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    transition: width 300ms ease-out;
+}
+
+.neuralwatt-progress-bar.usage-low {
+    background-color: #22c55e;
+}
+
+.neuralwatt-progress-bar.usage-medium {
+    background-color: #eab308;
+}
+
+.neuralwatt-progress-bar.usage-high {
+    background-color: #f97316;
+}
+
+.neuralwatt-progress-bar.usage-critical {
+    background-color: #ef4444;
+}
+
+/* Field label (left side of detail rows) */
+.neuralwatt-field-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #c0c0c0;
+}
+
+/* Section separator */
+.neuralwatt-section-separator {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 24px 0 12px 0;
+}
+
+/* Details label styles */
+.neuralwatt-reset-label {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+/* Refresh button styles */
+.neuralwatt-header-box {
+    padding: 2px 0;
+}
+
+.neuralwatt-refresh-button {
+    padding: 4px;
+    border-radius: 4px;
+    color: #a0a0a0;
+}
+
+.neuralwatt-refresh-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.neuralwatt-refresh-button:active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer styles */
+.neuralwatt-footer-box {
+    padding: 6px 0;
+    spacing: 4px;
+}
+
+.neuralwatt-footer-label {
+    font-size: 11px;
+    color: #808080;
+}
+
+.neuralwatt-error-label {
+    font-size: 14px;
+    color: #ef4444;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.detail-label {
+    margin-bottom: 30px;
+}
+
+.neuralwatt-error-label:hover {
+    background-color: rgba(239, 68, 68, 0.15);
+}
+
+.neuralwatt-error-scroll {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.neuralwatt-error-clear-button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.neuralwatt-error-clear-button:hover {
+    background-color: rgba(239, 68, 68, 0.4);
+}
